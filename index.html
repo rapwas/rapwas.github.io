@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เปรียบเทียบ OOP ใน Java, C++, Python</title>
+</head>
+<body>
+    <h1>เปรียบเทียบการเขียนโปรแกรมเชิงวัตถุ (OOP) ด้วยภาษา Java, C++, Python</h1>
+
+    <h2>ความเหมือนกัน (Similarities):</h2>
+    <ul>
+        <li><strong>หลักการ OOP:</strong> ทั้งสามภาษาใช้หลักการ OOP ที่เหมือนกัน ได้แก่ Encapsulation (การห่อหุ้ม), Inheritance (การสืบทอด), Polymorphism (พหุสัณฐาน), และ Abstraction (ความเป็นนามธรรม)</li>
+        <li><strong>การสืบทอด (Inheritance):</strong> ทุกภาษามีระบบการสืบทอดที่สามารถให้คลาสลูก (Subclass) สืบทอดคุณสมบัติจากคลาสพ่อ (Superclass) ได้</li>
+        <li><strong>Polymorphism:</strong> ทุกภาษามีการรองรับ polymorphism ซึ่งเป็นการอนุญาตให้วัตถุของคลาสลูกสามารถทำงานในแบบคลาสพ่อได้ เช่นการใช้ method overriding</li>
+        <li><strong>การจัดการข้อยกเว้น (Exception Handling):</strong> ทั้งสามภาษามีระบบการจัดการข้อยกเว้น (try, catch/except) สำหรับการจัดการกับข้อผิดพลาดในระหว่างการทำงาน</li>
+    </ul>
+
+    <h2>ความแตกต่าง (Differences):</h2>
+    <ul>
+        <li><strong>การจัดการหน่วยความจำ (Memory Management):</strong>
+            <ul>
+                <li><strong>Java:</strong> มีการจัดการหน่วยความจำอัตโนมัติผ่านระบบ Garbage Collection ที่คอยเก็บคืนหน่วยความจำของวัตถุที่ไม่ได้ใช้งานแล้ว</li>
+                <li><strong>C++:</strong> ผู้พัฒนาต้องจัดการหน่วยความจำเอง โดยใช้คำสั่ง <code>new</code> และ <code>delete</code> เพื่อจัดการการสร้างและทำลายวัตถุ</li>
+                <li><strong>Python:</strong> ใช้ระบบ Garbage Collection เช่นเดียวกับ Java ในการจัดการหน่วยความจำโดยอัตโนมัติ</li>
+            </ul>
+        </li>
+        <li><strong>การนิยามประเภทข้อมูล (Data Types and Typing):</strong>
+            <ul>
+                <li><strong>Java:</strong> เป็นภาษาที่ใช้ Static Typing ต้องระบุประเภทของตัวแปรก่อนใช้งาน เช่น <code>int</code>, <code>String</code></li>
+                <li><strong>C++:</strong> เป็นภาษาที่ใช้ Static Typing เช่นกัน โดยมีการนิยามประเภทตัวแปรแบบชัดเจน</li>
+                <li><strong>Python:</strong> เป็นภาษาที่ใช้ Dynamic Typing ตัวแปรไม่จำเป็นต้องระบุประเภทเมื่อสร้าง</li>
+            </ul>
+        </li>
+        <li><strong>ความเป็น Platform-Dependent:</strong>
+            <ul>
+                <li><strong>Java:</strong> เป็น platform-independent เนื่องจากสามารถทำงานบนเครื่องใดก็ได้ที่มี Java Virtual Machine (JVM)</li>
+                <li><strong>C++:</strong> เป็น platform-dependent ต้องทำการคอมไพล์โปรแกรมใหม่ตามแพลตฟอร์มที่จะใช้งาน</li>
+                <li><strong>Python:</strong> คล้ายกับ Java คือสามารถทำงานได้ข้ามแพลตฟอร์มหากมี Python interpreter บนเครื่อง</li>
+            </ul>
+        </li>
+        <li><strong>ความซับซ้อนของไวยากรณ์ (Syntax Complexity):</strong>
+            <ul>
+                <li><strong>Java:</strong> มีไวยากรณ์ที่ค่อนข้างเคร่งครัดและมีโครงสร้างที่แน่นอน ต้องใช้เครื่องหมายปีกกา <code>{}</code> และใช้ <code>;</code> ปิดท้ายคำสั่ง</li>
+                <li><strong>C++:</strong> ไวยากรณ์ซับซ้อนกว่า Java เนื่องจากมีฟีเจอร์อย่าง pointer และการจัดการหน่วยความจำระดับล่าง ต้องมีการใช้เครื่องหมาย <code>{}</code> และ <code>;</code> เช่นกัน</li>
+                <li><strong>Python:</strong> ไวยากรณ์เรียบง่ายที่สุดในสามภาษา ไม่ต้องใช้ <code>{}</code> หรือ <code>;</code> เน้นการจัดระเบียบโค้ดด้วยการเยื้อง (indentation)</li>
+            </ul>
+        </li>
+        <li><strong>การสนับสนุน Multiple Inheritance:</strong>
+            <ul>
+                <li><strong>Java:</strong> ไม่สนับสนุน Multiple Inheritance โดยตรงสำหรับคลาส แต่สนับสนุนผ่านการใช้ Interface</li>
+                <li><strong>C++:</strong> สนับสนุน Multiple Inheritance โดยคลาสสามารถสืบทอดจากหลายคลาสได้</li>
+                <li><strong>Python:</strong> สนับสนุน Multiple Inheritance ได้โดยตรง</li>
+            </ul>
+        </li>
+        <li><strong>การสนับสนุนสำหรับโปรแกรมแบบ Functional:</strong>
+            <ul>
+                <li><strong>Java:</strong> รองรับบางส่วนใน Java 8 ขึ้นไป เช่นการใช้ Lambda Expressions</li>
+                <li><strong>C++:</strong> มีการสนับสนุนฟังก์ชันแนว Functional บางส่วน เช่น lambda functions และ function objects (functors)</li>
+                <li><strong>Python:</strong> รองรับโปรแกรมแบบ Functional อย่างสมบูรณ์ และเป็นหนึ่งในภาษาที่เน้นการเขียนโค้ดแบบ functional programming ได้ง่าย</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>ตัวอย่างโค้ดการสร้างคลาสพื้นฐานในแต่ละภาษา:</h2>
+
+    <h3>Java:</h3>
+    <pre><code>
+class Animal {
+    String name;
+
+    Animal(String name) {
+        this.name = name;
+    }
+
+    void speak() {
+        System.out.println("The animal speaks");
+    }
+}
+    </code></pre>
+
+    <h3>C++:</h3>
+    <pre><code>
+#include &lt;iostream&gt;
+using namespace std;
+
+class Animal {
+public:
+    string name;
+
+    Animal(string name) {
+        this-&gt;name = name;
+    }
+
+    void speak() {
+        cout &lt;&lt; "The animal speaks" &lt;&lt; endl;
+    }
+};
+    </code></pre>
+
+    <h3>Python:</h3>
+    <pre><code>
+class Animal:
+    def __init__(self, name):
+        self.name = name
+
+    def speak(self):
+        print("The animal speaks")
+    </code></pre>
+
+    <h2>สรุป:</h2>
+    <p><strong>Java</strong> เน้นความเป็นระเบียบและความปลอดภัยในแง่ของการจัดการหน่วยความจำผ่าน JVM</p>
+    <p><strong>C++</strong> มีความยืดหยุ่นสูงและควบคุมการจัดการหน่วยความจำเอง แต่โค้ดอาจซับซ้อนกว่า</p>
+    <p><strong>Python</strong> เน้นความง่ายและรวดเร็วในการพัฒนา แต่ยังคงมีฟีเจอร์ OOP ที่แข็งแกร่ง</p>
+</body>
+</html>
